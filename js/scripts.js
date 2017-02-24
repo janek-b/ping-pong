@@ -2,8 +2,10 @@
 function pingPong(number) {
   var numberArray = [];
   for (var i = 1; i <= number; i++) {
-    if (divisibleByThree(i)) {
-      numberArray.push("ping")
+    if (divisibleByThree(i) && divisibleByFive(i)) {
+      numberArray.push("ping-pong")
+    } else if (divisibleByThree(i)) {
+      numberArray.push("ping");
     } else if (divisibleByFive(i)) {
       numberArray.push("pong");
     } else {
