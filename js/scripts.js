@@ -2,15 +2,22 @@
 function pingPong(number) {
   var numberArray = [];
   for (var i = 1; i <= number; i++) {
-    if (i === 2) {
-      numberArray.push("two")
+    if (divisibleByThree(i)) {
+      numberArray.push("ping")
     } else {
       numberArray.push(i);
     };
   };
-
   return numberArray;
 };
+
+function divisibleByThree(number) {
+  if ((number % 3) === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 // Front-End
 $(function() {
