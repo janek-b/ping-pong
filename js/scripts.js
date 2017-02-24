@@ -4,6 +4,8 @@ function pingPong(number) {
   for (var i = 1; i <= number; i++) {
     if (divisibleByThree(i)) {
       numberArray.push("ping")
+    } else if (divisibleByFive(i)) {
+      numberArray.push("pong");
     } else {
       numberArray.push(i);
     };
@@ -16,8 +18,16 @@ function divisibleByThree(number) {
     return true;
   } else {
     return false;
-  }
-}
+  };
+};
+
+function divisibleByFive(number) {
+  if ((number % 5) === 0) {
+    return true;
+  } else {
+    return false;
+  };
+};
 
 // Front-End
 $(function() {
