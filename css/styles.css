@@ -1,3 +1,12 @@
-h1 {
+body {
+  background-color: #cccccc;
+}
+
+.jumbotron {
   text-align: center;
+  background-color: #e9ce7d;
+}
+
+.about {
+  background-color: #57bf7a;
 }

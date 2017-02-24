@@ -33,8 +33,23 @@ function divisibleByFive(number) {
 
 // Front-End
 $(function() {
+
+  function resizeAbout() {
+    if (($(document).width()) === ($(".about").width() + 30)) {
+      $(".about").height("100%")
+    } else {
+      $(".about").height(($(document).height() - $(".about").offset().top));
+    }
+  };
+
+  window.addEventListener("load", resizeAbout, false);
+  window.addEventListener("resize", resizeAbout, false);
+  window.addEventListener("scroll", resizeAbout, false);
+
   $("#pingPongForm").submit(function() {
     event.preventDefault();
+    console.log($(window).height());
+    console.log($(document).height());
 
     var userInput = parseInt($("#inputNumber").val());
     var results = pingPong(userInput);
