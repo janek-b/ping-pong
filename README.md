@@ -25,7 +25,7 @@ _This project will take a number inputed by the user and return all numbers from
 * _Open index.html file in web browser to view the project locally_
 * _Use web server of your choice to host the website_
 
-_The track suggester can also be viewed [here](http://janek-b.github.io/ping-pong)_
+_The project can also be viewed [here](http://janek-b.github.io/ping-pong)_
 
 ### License
 
