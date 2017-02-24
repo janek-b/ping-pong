@@ -38,6 +38,7 @@ $(function() {
 
     var userInput = parseInt($("#inputNumber").val());
     var results = pingPong(userInput);
+    $(".output").empty();
 
     results.forEach(function(result) {
       $(".output").append("<li>"+result+"</li>");
