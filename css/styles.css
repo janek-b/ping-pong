@@ -7,6 +7,18 @@ body {
   background-color: #e9ce7d;
 }
 
-.about {
+.sidebar {
   background-color: #57bf7a;
+}
+
+.about {
+  padding-left: 5px;
+}
+
+.about h4 {
+  color: #e9ce7d;
+}
+
+.about h5 {
+  color: white;
 }

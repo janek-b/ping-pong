@@ -34,17 +34,17 @@ function divisibleByFive(number) {
 // Front-End
 $(function() {
 
-  function resizeAbout() {
-    if (($(document).width()) === ($(".about").width() + 30)) {
-      $(".about").height("100%")
+  function resizeSideBar() {
+    if (($(document).width()) === ($(".sidebar").width() + 30)) {
+      $(".sidebar").height("100%")
     } else {
-      $(".about").height(($(document).height() - $(".about").offset().top));
+      $(".sidebar").height(($(document).height() - $(".sidebar").offset().top));
     }
   };
 
-  window.addEventListener("load", resizeAbout, false);
-  window.addEventListener("resize", resizeAbout, false);
-  window.addEventListener("scroll", resizeAbout, false);
+  window.addEventListener("load", resizeSideBar, false);
+  window.addEventListener("resize", resizeSideBar, false);
+  window.addEventListener("scroll", resizeSideBar, false);
 
   $("#pingPongForm").submit(function() {
     event.preventDefault();
