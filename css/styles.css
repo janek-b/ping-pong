@@ -1,14 +1,14 @@
 body {
-  background-color: #cccccc;
+  background-color: rgb(230, 230, 230);
 }
 
 .jumbotron {
   text-align: center;
-  background-color: #e9ce7d;
+  background-color: rgb(242, 223, 183);
 }
 
 .sidebar {
-  background-color: #57bf7a;
+  background-color: rgb(152, 186, 146);
 }
 
 .about {
@@ -16,7 +16,7 @@ body {
 }
 
 .about h4 {
-  color: #e9ce7d;
+  color: rgb(242, 223, 183);
 }
 
 .about h5 {
