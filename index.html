@@ -9,17 +9,38 @@
   </head>
   <body>
     <div class="container-fluid">
-      <h1>Ping Pong</h1>
-      <form id="pingPongForm">
-        <label for="inputNumber">Enter a number:</label>
-        <input id="inputNumber" type="number">
-        <button type="submit" class="btn btn-primary">Ping Pong!</button>
-      </form>
+      <div class="row">
+        <div class="jumbotron">
+          <h1>Ping Pong</h1>
+        </div>
+      </div>
+      <div class="row">
+        <br>
+        <div class="col-md-3">
 
-      <div class="output">
+        </div>
+        <div class="col-md-6">
+          <h2>Let's play!</h2>
+          <h3>Rules:</h3>
+          <p>Ping Pong will count up to the number you entered starting at 1 with the following exceptions</p>
+          <ol>
+            <li>Numbers divisible by 3 become "ping"</li>
+            <li>Numbers divisible by 5 become "pong"</li>
+            <li>Numbers divisible by 3 and 5 become "ping-pong"</li>
+          </ol>
+          <p></p>
+          <form id="pingPongForm">
+            <label for="inputNumber">Enter your number here:</label>
+            <input id="inputNumber" type="number">
+            <button type="submit" class="btn btn-primary">Ping Pong!</button>
+          </form>
+          <div>
+            <ul class="output">
 
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-
   </body>
 </html>

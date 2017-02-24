@@ -37,8 +37,10 @@ $(function() {
     event.preventDefault();
 
     var userInput = parseInt($("#inputNumber").val());
-    var result = pingPong(userInput);
+    var results = pingPong(userInput);
 
-    $(".output").text(result);
+    results.forEach(function(result) {
+      $(".output").append("<li>"+result+"</li>");
+    });
   });
 });
