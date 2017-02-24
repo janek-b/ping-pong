@@ -2,11 +2,15 @@
 function pingPong(number) {
   var numberArray = [];
   for (var i = 1; i <= number; i++) {
-    numberArray.push(i);
-  }
+    if (i === 2) {
+      numberArray.push("two")
+    } else {
+      numberArray.push(i);
+    };
+  };
 
   return numberArray;
-}
+};
 
 // Front-End
 $(function() {
